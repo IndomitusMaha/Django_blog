@@ -6,7 +6,7 @@ from .models import Post
 
 
 # Func view version
-# Don't actually need comment, but comment anyway
+# Don't actually need to comment, but commented anyway
 # def home(request):
 #     context = {
 #         'posts': Post.objects.all()
