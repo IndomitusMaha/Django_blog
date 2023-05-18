@@ -1,7 +1,8 @@
 {% extends "blog/base.html" %}
 {% block content %}
-<!--    DEFAULT OBJECT NAME OVERWRITTEN TO 'posts'. Default object name is "object_list",
+    <!--    DEFAULT OBJECT NAME OVERWRITTEN TO 'posts'. Default object name is "object_list",
     if it's not a list then it's "object"-->
+    <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
     {% for post in posts %}
         <article class="media content-section">
           <img class="round-image article-img"  src="{{ post.author.profile.image.url }}">
